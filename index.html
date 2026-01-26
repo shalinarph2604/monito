@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <nav id="navbar">
-        <img src="assets/img/logo.svg" alt="Logo" class="logo">
-        <ul id="navlist">
-            <li class="navlink">Home</li>
-            <li class="navlink">Category</li>
-            <li class="navlink">About</li>
-            <li class="navlink">Contact</li>
-        </ul>
-        <form id="search-bar">
-            <label for="search"><img src="../assets/img/icons/search.svg" alt="Search Icon" /></label>
-            <input type="search" id="search" name="search" placeholder="Search something here!">
-        </form>
-        <button id="joinBtn">Join the community</button>
+    <nav>
+        <div id="nav-left">
+            <img src="assets/img/logo.svg" alt="Logo" class="logo">
+            <ul id="navlist">
+                <li class="navlink">Home</li>
+                <li class="navlink">Category</li>
+                <li class="navlink">About</li>
+                <li class="navlink">Contact</li>
+            </ul>
+        </div>
+        <div id="nav-right">
+            <form id="search-bar">
+                <label for="search"><img src="assets/img/icons/search.svg" alt="Search Icon" /></label>
+                <input type="search" id="search" name="search" placeholder="Search something here!">
+            </form>
+            <button id="joinBtn">Join the community</button>
+            <select name="language" id="languages">
+                <option style="display:flex" value="en" selected>EN</option>
+                <option value="es">ES</option>
+                <option value="fr">FR</option>
+            </select>
+        </div>
     </nav>
     <div id="landing-page">
         <h1 style="
