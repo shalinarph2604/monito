@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Slicing Documentation</title>
+    <title>Monito</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -11,10 +11,10 @@
         <div id="nav-left">
             <img src="assets/img/logo.svg" alt="Logo" class="logo">
             <ul id="navlist">
-                <li class="navlink">Home</li>
-                <li class="navlink">Category</li>
-                <li class="navlink">About</li>
-                <li class="navlink">Contact</li>
+                <li><a href="#" class="navlink">Home</a></li>
+                <li><a href="#" class="navlink">Category</a></li>
+                <li><a href="#" class="navlink">About</a></li>
+                <li><a href="#" class="navlink">Contact</a></li>
             </ul>
         </div>
         <div id="nav-right">
@@ -30,24 +30,234 @@
             </select>
         </div>
     </nav>
-    <div id="landing-page">
-        <h1 style="
-            font-size: 58.894px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 66.747px; /* 113.333% */
-            text-transform: capitalize;
-        "
+    <div id="landing-page" style="display:flex;">
+        <div id="lanpage-text" style="padding-left:40px; padding-top:65px;"
         >
-        One More Friend
-        </h1>
-        <h2>Thousands more fun!</h2>
-        <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</p>
+            <h1 style="
+                font-size: 58.894px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 66.747px; /* 113.333% */
+                text-transform: capitalize;
+            "
+            >
+                One More Friend
+            </h1>
+            <h2 style="
+                font-size:45.152px;
+                font-weight:700;
+                line-height:58.894px;
+                text-transform:capitalize;
+                border:none;
+            "
+            >
+                Thousands more fun!
+            </h2>
+            <p style="
+                margin-top:18px;
+                width:471.155px;
+                color:var(--Neutral-Color-80, #242B33);
+                font-size:15.705px;
+                font-style:normal;
+                font-weight:500; 
+                line-height:23.558px;
+            "
+            >
+                Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!
+            </p>
+            <div id="btn-group" style="display:flex; gap:25px; margin-top:20px;">
+                <button style="
+                    width:159.996px;
+                    padding:14px 28px 10px 28px;
+                    justify-content:center;
+                    align-items:center;
+                    gap:10px;
+                    color:#003459;
+                    border:2px solid #003459;
+                    background:transparent;
+                    border-radius:57px;
+                    cursor:pointer;
+                    font-size: 15.705px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 23.558px;
+                    "
+                >
+                    View Intro
+                </button>
+                <button style="
+                    width:159.996px;
+                    padding:14px 28px 10px 28px;
+                    justify-content:center;
+                    align-items:center;
+                    gap:10px;
+                    color:#F4F4F4;
+                    border:none;
+                    border-radius:57px;
+                    background:var(--Primary-Color-Dark-Blue, #003459);
+                    cursor:pointer;
+                    font-size: 15.705px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 23.558px;
+                ">
+                    Explore Now
+                </button>
+            </div>
+        </div>
+        <div id="lanpage-img" style="position:relative;">
+            <div style="
+                height:400px;
+                width:400px;
+                background-color:#F7DBA7;
+                border-radius:97.176px;
+                transform:rotate(25.23deg);
+                position:absolute;
+                left:200px;
+                z-index:2;
+            ">
+            </div>
+            <div style="
+                height:400px;
+                width:400px;
+                border-radius:97.176px;
+                background-color:#003459;
+                position:absolute;
+                left:200px;
+                z-index:1;
+            ">
+            </div>
+            <img src="assets/img/landing-page.png" alt="dog" style="
+                width:450px;
+                height:450px;    
+                object-fit:cover;
+                position:absolute;
+                left:150px;
+                bottom:0px;
+                z-index:3;
+            "/>
+        </div>
     </div>
     <div id="container">
-
+        <p style="
+            color: #000;
+            font-size: 15.705px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.558px;   
+        ">
+            Whats new?
+        </p>
+        <h5 style="
+            color: var(--Primary-Color-Dark-Blue, #003459);
+            font-size: 23.558px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35.337px;
+            text-transform: capitalize; 
+        "
+        >Take A Look At Some Of Our Pets</h5>
     </div>
     <footer id="footer">
+        <div style="
+            background-color:#003459;
+            padding:24.175px;
+            border-radius:12.088px;
+            align-items:flex-start;
+            display:flex;
+            gap:15.11px;
+        ">
+            <p style="
+                width: 293.88px;
+                color: var(--Neutral-Color-00, #FDFDFD);
+                font-size: 18.131px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27.197px;
+                text-transform: capitalize;
+            "
+            >
+                Register now so you don't miss our programs
+            </p>
+            <form style="
+                background-color:#FFF;
+                display: flex;
+                width: 935.537px;;
+                padding: 9.066px;
+                align-items: center;
+                border-radius: 10.577px;
+                gap: 9.066px;
+            ">
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                    style="
+                        display: flex;
+                        width: 85%;
+                        padding: 14px 28px;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        border-radius: 8px;
+                        border: 1px solid var(--Neutral-Color-40, #99A2A5);
+                        background: #FFF;
+                        outline:none;
+                ">
+                <button style="
+                    display: flex;
+                    width: 123.143px;
+                    padding: 10.577px 21.153px 7.555px 21.153px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 7.555px;
+                    color:#FDFDFD;
+                    flex-shrink: 0;
+                    border-radius: 6.044px;
+                    border:none;
+                    outline:none;
+                    background: var(--Primary-Color-Dark-Blue, #003459);
+                    font-size: 12.088px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 18.131px;
+                ">
+                    Subscribe Now
+                </button>    
+            </form>
+        </div>
+        <div style="
+            display:flex;
+            margin-top:20px;
+        ">
+            <ul style="
+                display: flex;
+                align-items: flex-start;
+                gap: 45.329px;
+                list-style-type: none;
+            ">
+                <li><a href="#" class="foot-nav">Home</a></li>
+                <li><a href="#" class="foot-nav">Category</a></li>
+                <li><a href="#" class="foot-nav">About</a></li>
+                <li><a href="#" class="foot-nav">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="socmed"><img href="assets/img/icons/facebook.svg"></a></li>
+                <li><a href="#" class="socmed"><img></a></li>
+                <li><a href="#" class="socmed"><img></a></li>
+                <li><a href="#" class="socmed"><img></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p>© 2022 Monito. All rights reserved.</p>
+            <img src="assets/img/logo.svg" alt="logo"/>
+            <hr>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
