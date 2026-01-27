@@ -78,7 +78,7 @@ nav #nav-right {
    line-height: 19.631px; /* 142.857% */
 }
 
-#joinBtn {
+#join-btn {
    color: #FDFDFD;
    border: none;
    font-weight: 500;
@@ -125,6 +125,12 @@ nav #nav-right {
    padding:40px;
 }
 
+#content {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 20px;
+}
+
 #footer {
    border-radius: 30.219px 30.219px 0 0;
    width:100%;
@@ -149,4 +155,58 @@ nav #nav-right {
 .socmed {
    height:24px;
    cursor:pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+   nav {
+      display: flex;
+   }
+
+  #join-btn {
+      display: none;
+  }
+
+  #navlist {
+      display: none;
+  }
+
+  #search-bar {
+      display: none;
+  }
+
+  #languages {
+      display: none;
+  }
+
+  #logo {
+      align-content: center;
+  }
+
+  #landing-page {
+      flex-direction: column;
+  }
+
+  #lanpage-text {
+   padding-left: 20px;
+   padding-right: 20px;
+  }
+
+  #lanpage-img {
+   width: 100%;
+   height: 450px;
+   margin-top: 40px;
+  }
+
+  #dog-img {
+   width: 300px;
+   left: 50%;
+   height: auto;
+  }
+
+  #rtgl-wht, #rtgl-blue {
+   left: 50%;
+   transform: translateX(-50%) rotate(25.23deg);
+  }
+
 }

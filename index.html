@@ -9,7 +9,7 @@
 <body>
     <nav>
         <div id="nav-left">
-            <img src="assets/img/logo.svg" alt="Logo" class="logo">
+            <img src="assets/img/logo.svg" alt="Logo" id="logo">
             <ul id="navlist">
                 <li><a href="#" class="navlink">Home</a></li>
                 <li><a href="#" class="navlink">Category</a></li>
@@ -22,7 +22,7 @@
                 <label for="search"><img src="assets/img/icons/search.svg" alt="Search Icon" /></label>
                 <input type="search" id="search" name="search" placeholder="Search something here!">
             </form>
-            <button id="joinBtn">Join the community</button>
+            <button id="join-btn">Join the community</button>
             <select name="language" id="languages">
                 <option style="display:flex" value="en" selected>EN</option>
                 <option value="es">ES</option>
@@ -105,8 +105,13 @@
                 </button>
             </div>
         </div>
-        <div id="lanpage-img" style="position:relative;">
-            <div style="
+        <div id="lanpage-img" style="
+            position:relative;
+            width:600px;
+            height:500px;
+            flex-shrink:0;
+        ">
+            <div id="rtgl-wht" style="
                 height:400px;
                 width:400px;
                 background-color:#F7DBA7;
@@ -117,7 +122,7 @@
                 z-index:2;
             ">
             </div>
-            <div style="
+            <div id="rtgl-blue" style="
                 height:400px;
                 width:400px;
                 border-radius:97.176px;
@@ -127,15 +132,23 @@
                 z-index:1;
             ">
             </div>
-            <img src="assets/img/landing-page.png" alt="dog" style="
+            <div id="img-mask" style="
                 width:450px;
-                height:450px;    
-                object-fit:cover;
-                position:absolute;
+                height:450px;
                 left:150px;
-                bottom:0px;
+                bottom:70px;
+                position:absolute;
                 z-index:3;
-            "/>
+                overflow:hidden;
+            ">
+                <img id="dog-img" src="assets/img/landing-page.png" alt="dog" style="
+                    width:450px;
+                    height:450px;    
+                    object-fit:cover;
+                    bottom:0px;
+                    position:absolute;
+                "/>
+            </div>
         </div>
     </div>
 
@@ -156,7 +169,8 @@
             font-style: normal;
             font-weight: 700;
             line-height: 35.337px;
-            text-transform: capitalize; 
+            text-transform: capitalize;
+            margin-bottom: 25px; 
         ">
             Take A Look At Some Of Our Pets
         </h5>
