@@ -32,18 +32,11 @@ nav {
    color: var(--Primary-Color-Dark-Blue, #003459);
    font-size: 16.088px;
    text-decoration: none;
-   
-    /* 150% */
-}
-
-nav #nav-left #navlist #navlink {
-   text-decoration: none;
 }
 
 #navlist {
    display: flex;
    gap: 47.115px;
-   font-size: 15.705px;
    font-style: normal;
    line-height: 23.558px;
 }
@@ -87,19 +80,18 @@ nav #nav-right {
 
 #joinBtn {
    color: #FDFDFD;
-   font-family: SVN-Gilroy, sans-serif;
    border: none;
-   font-weight: 700;
+   font-weight: 500;
    font-style: normal;
+   font-size: 13.742px;
    border-radius: 55.95px;
-   line-height: 23.558px;
+   line-height: 19.558px;
    background: var(--Primary-Color-Dark-Blue, #003459);
    display: flex;
    height: 43.189px;
    padding: 13.742px 27.484px 9.816px 27.484px;
    justify-content: center;
    align-items: center;
-   gap: 9.816px;
    cursor: pointer;
 }
 
@@ -147,4 +139,14 @@ nav #nav-right {
    font-style: normal;
    font-weight: 500;
    line-height: 18.131px; /* 150% */
+}
+
+.terms_pol {
+   text-decoration: none;
+   color:#667479;
+}
+
+.socmed {
+   height:24px;
+   cursor:pointer;
 }

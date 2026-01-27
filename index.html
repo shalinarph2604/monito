@@ -138,6 +138,8 @@
             "/>
         </div>
     </div>
+
+<!-- Cotainer -->
     <div id="container">
         <p style="
             color: #000;
@@ -155,9 +157,15 @@
             font-weight: 700;
             line-height: 35.337px;
             text-transform: capitalize; 
-        "
-        >Take A Look At Some Of Our Pets</h5>
+        ">
+            Take A Look At Some Of Our Pets
+        </h5>
+        <div id="content">
+
+        </div>
     </div>
+
+<!-- Footer -->
     <footer id="footer">
         <div style="
             background-color:#003459;
@@ -179,56 +187,58 @@
             >
                 Register now so you don't miss our programs
             </p>
-            <form style="
-                background-color:#FFF;
-                display: flex;
-                width: 935.537px;;
-                padding: 9.066px;
-                align-items: center;
-                border-radius: 10.577px;
-                gap: 9.066px;
-            ">
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter your Email"
-                    style="
-                        display: flex;
-                        width: 85%;
-                        padding: 14px 28px;
-                        align-items: center;
-                        gap: 10px;
-                        flex-shrink: 0;
-                        border-radius: 8px;
-                        border: 1px solid var(--Neutral-Color-40, #99A2A5);
-                        background: #FFF;
-                        outline:none;
-                ">
-                <button style="
+                <form style="
+                    font-family: SVN-Gilroy, sans-serif;
+                    background-color:#FFF;
                     display: flex;
-                    width: 123.143px;
-                    padding: 10.577px 21.153px 7.555px 21.153px;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 7.555px;
-                    color:#FDFDFD;
-                    flex-shrink: 0;
-                    border-radius: 6.044px;
-                    border:none;
-                    outline:none;
-                    background: var(--Primary-Color-Dark-Blue, #003459);
-                    font-size: 12.088px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 18.131px;
+                    width: 935.537px;
+                    padding: 9.066px;
+                    align-items:center;
+                    justify-content:center;
+                    border-radius:10.577px;
+                    gap:9.066px;
                 ">
-                    Subscribe Now
-                </button>    
-            </form>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your Email"
+                        style="
+                            font-family: SVN-Gilroy, sans-serif;
+                            display: flex;
+                            width: 85%;
+                            padding: 14px 28px;
+                            align-items:center;
+                            gap:10px;
+                            border-radius:8px;
+                            border:1px solid var(--Neutral-Color-40, #99A2A5);
+                            background: #FFF;
+                            outline:none;
+                            font-size: 13.742px;
+                            font-style: normal;
+                            font-weight: 500
+                    ">
+                    <button style="
+                        font-family: SVN-Gilroy, sans-serif;
+                        padding: 10.577px 21.153px 7.555px 21.153px;
+                        color:#FDFDFD;
+                        border-radius:6.044px;
+                        border:none;
+                        outline:none;
+                        background:var(--Primary-Color-Dark-Blue, #003459);
+                        font-size: 13.742px;
+                        font-style: normal;
+                        font-weight:500;
+                        line-height: 18.131px;
+                    ">
+                        Subscribe Now
+                    </button>    
+                </form>
         </div>
         <div style="
             display:flex;
             margin-top:20px;
+            margin-bottom:20px;
+            justify-content:space-between;
         ">
             <ul style="
                 display: flex;
@@ -241,23 +251,56 @@
                 <li><a href="#" class="foot-nav">About</a></li>
                 <li><a href="#" class="foot-nav">Contact</a></li>
             </ul>
-            <ul>
-                <li><a href="#" class="socmed"><img href="assets/img/icons/facebook.svg"></a></li>
-                <li><a href="#" class="socmed"><img></a></li>
-                <li><a href="#" class="socmed"><img></a></li>
-                <li><a href="#" class="socmed"><img></a></li>
-            </ul>
+            <div style="
+                display:flex;
+                justify-content:space-between;
+                gap:40px;
+            ">
+                <img src="assets/img/icons/facebook.svg" alt="Facebook" href="#" class="socmed">
+                <img src="assets/img/icons/twitter.svg" alt="Twitter" href="#" class="socmed">
+                <img src="assets/img/icons/instagram.svg" alt="Instagram" href="#" class="socmed">
+                <img src="assets/img/icons/youtube.svg" alt="YouTube" href="#" class="socmed">
+            </div>
         </div>
-
-        <div>
-            <p>© 2022 Monito. All rights reserved.</p>
-            <img src="assets/img/logo.svg" alt="logo"/>
-            <hr>
-            <ul>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+        <hr>
+        <div style="
+            display:flex;
+            grid-template-columns:auto;
+            align-items:center;
+            justify-content: space-between;
+            margin-top:20px;
+        "
+        >
+            <div>
+                <p style="
+                    color:#667479;
+                    font-size:16px;
+                    font-style:normal;
+                    font-weight:500;
+                    line-height:15.11px;
+                    "
+                >
+                    © 2022 Monito. All rights reserved.
+                </p>
+            </div>
+            <div>
+                <img src="assets/img/logo.svg" alt="logo"/>
+            </div>
+            <ul style="
+                display: flex;
+                align-items: flex-start;
+                gap: 45.329px;
+                font-style:normal;
+                font-weight:500;
+                font-size:15.577px;
+                line-height:15.11px;
+                list-style-type:none;
+            ">
+                <li><a href="#" class="terms_pol">Terms of Service</a></li>
+                <li><a href="#" class="terms_pol">Privacy Policy</a></li>
             </ul>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
