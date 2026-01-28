@@ -30,14 +30,29 @@
             </select>
         </div>
     </nav>
-    <div id="landing-page" style="display:flex;">
-        <div id="lanpage-text" style="padding-left:40px; padding-top:65px;"
+    <div id="landing-page" 
+        style="
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            width:100%;
+            align-items:center;
+            color: var(--Primary-Color-Dark-Blue-80, #002a48);
+            border-radius: 0 0 39.263px 39.263px;
+            background: var(--Linear, linear-gradient(103deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%));
+            padding-top: 80px;
+    ">
+        <div id="lanpage-text"
+            style="
+                padding-left:40px;
+                padding-top:20px;
+                width:100%;
+            "
         >
             <h1 style="
                 font-size: 58.894px;
                 font-style: normal;
                 font-weight: 800;
-                line-height: 66.747px; /* 113.333% */
+                line-height: 66.747px;
                 text-transform: capitalize;
             "
             >
@@ -107,9 +122,11 @@
         </div>
         <div id="lanpage-img" style="
             position:relative;
-            width:600px;
-            height:500px;
-            flex-shrink:0;
+            width:100%;
+            height:450px;
+            max-width: 600px;
+            overflow:hidden;
+            justify-self: center;
         ">
             <div id="rtgl-wht" style="
                 height:400px;
@@ -117,8 +134,9 @@
                 background-color:#F7DBA7;
                 border-radius:97.176px;
                 transform:rotate(25.23deg);
+                left: 100px;
+                bottom:0px;
                 position:absolute;
-                left:200px;
                 z-index:2;
             ">
             </div>
@@ -128,18 +146,19 @@
                 border-radius:97.176px;
                 background-color:#003459;
                 position:absolute;
-                left:200px;
+                transform:rotate(-25.23deg);
+                bottom: 0px;
+                left: 100px;
                 z-index:1;
             ">
             </div>
             <div id="img-mask" style="
                 width:450px;
                 height:450px;
-                left:150px;
-                bottom:70px;
+                bottom:0px;
                 position:absolute;
                 z-index:3;
-                overflow:hidden;
+                left: 50px;
             ">
                 <img id="dog-img" src="assets/img/landing-page.png" alt="dog" style="
                     width:450px;
@@ -181,7 +200,8 @@
 
 <!-- Footer -->
     <footer id="footer">
-        <div style="
+        <div id="register-box" 
+            style="
             background-color:#003459;
             padding:24.175px;
             border-radius:12.088px;
@@ -201,7 +221,8 @@
             >
                 Register now so you don't miss our programs
             </p>
-                <form style="
+            <form id="register-form"
+                style="
                     font-family: SVN-Gilroy, sans-serif;
                     background-color:#FFF;
                     display: flex;
@@ -211,48 +232,50 @@
                     justify-content:center;
                     border-radius:10.577px;
                     gap:9.066px;
-                ">
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter your Email"
-                        style="
-                            font-family: SVN-Gilroy, sans-serif;
-                            display: flex;
-                            width: 85%;
-                            padding: 14px 28px;
-                            align-items:center;
-                            gap:10px;
-                            border-radius:8px;
-                            border:1px solid var(--Neutral-Color-40, #99A2A5);
-                            background: #FFF;
-                            outline:none;
-                            font-size: 13.742px;
-                            font-style: normal;
-                            font-weight: 500
-                    ">
-                    <button style="
+            ">
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                    style="
                         font-family: SVN-Gilroy, sans-serif;
-                        padding: 10.577px 21.153px 7.555px 21.153px;
-                        color:#FDFDFD;
-                        border-radius:6.044px;
-                        border:none;
+                        display: flex;
+                        width: 100%;
+                        padding: 14px 28px;
+                        align-items:center;
+                        gap:10px;
+                        border-radius:8px;
+                        border:1px solid var(--Neutral-Color-40, #99A2A5);
+                        background: #FFF;
                         outline:none;
-                        background:var(--Primary-Color-Dark-Blue, #003459);
                         font-size: 13.742px;
                         font-style: normal;
-                        font-weight:500;
-                        line-height: 18.131px;
-                    ">
-                        Subscribe Now
-                    </button>    
-                </form>
+                        font-weight: 500
+                ">
+                <button id="subscribe-btn"
+                    style="
+                    font-family: SVN-Gilroy, sans-serif;
+                    padding: 10.577px 21.153px 7.555px 21.153px;
+                    color:#FDFDFD;
+                    border-radius:6.044px;
+                    border:none;
+                    outline:none;
+                    background:var(--Primary-Color-Dark-Blue, #003459);
+                    font-size: 13.742px;
+                    font-style: normal;
+                    font-weight:500;
+                    line-height: 18.131px;
+                ">
+                    Subscribe Now
+                </button>    
+            </form>
         </div>
-        <div style="
-            display:flex;
-            margin-top:20px;
-            margin-bottom:20px;
-            justify-content:space-between;
+        <div id="footer-top"
+            style="
+                display:flex;
+                margin-top:20px;
+                margin-bottom:20px;
+                justify-content:space-between;
         ">
             <ul style="
                 display: flex;
@@ -277,15 +300,15 @@
             </div>
         </div>
         <hr>
-        <div style="
-            display:flex;
-            grid-template-columns:auto;
-            align-items:center;
-            justify-content: space-between;
-            margin-top:20px;
+        <div id="footer-bottom"
+            style="
+                display:flex;
+                align-items:center;
+                justify-content: space-between;
+                margin-top:20px;
         "
         >
-            <div>
+            <div id="footer-creds">
                 <p style="
                     color:#667479;
                     font-size:16px;
@@ -297,7 +320,7 @@
                     © 2022 Monito. All rights reserved.
                 </p>
             </div>
-            <div>
+            <div id="footer-logo">
                 <img src="assets/img/logo.svg" alt="logo"/>
             </div>
             <ul style="
