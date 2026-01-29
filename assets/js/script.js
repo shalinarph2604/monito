@@ -91,6 +91,7 @@ const products = dogs.map(dog => {
             style="
                 display:flex;
                 flex-direction:column;
+                min-width:250px;
                 max-width:320px;
                 height:400px;
                 border-radius: 7.182px;
